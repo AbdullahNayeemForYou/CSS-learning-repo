@@ -1,0 +1,31 @@
+p {
+    font-size: 64px;
+    color: purple;
+} 
+
+
+/* 
+Retrieval:
+
+1. Type:
+Css file can be:
+    1. External: on other relative directory.
+    2. Internal: on same HTML script inside head element.
+    3. Inline: on the selector line
+
+2. Order:
+CSS files are prioritized in serial order for that external is prioritized last then internal then inline.
+
+3. Every CSS element's name:
+   *Selector→ p {
+   Property→ color: red;←*Declaration
+            }         ↑Property value
+    *"selector" is the HTML element we want to style.
+
+    *A property's value declaration is called Declaration
+
+    *From the start(Selector) to the end(Declaration) is called a ruleset(Often referred as rule)
+
+4. ";" used for as 'end' tag for each property value to add other properties.
+
+*/

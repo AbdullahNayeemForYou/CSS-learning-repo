@@ -1,0 +1,76 @@
+html {
+    font-size: 22px;
+}
+
+body {
+
+}
+
+main {
+    font-family: monospace;
+}
+
+p {
+  color: purple!important; 
+}
+
+p {
+  color: red; 
+}
+
+h1,h2 {
+    color: blue;
+}
+
+.highlight {
+    text-transform: uppercase;
+    color: gold;
+}
+
+.gray {
+    color: gray;
+}
+
+#second {
+    font-style: italic;
+}
+
+
+
+/* 
+Retrieval:
+
+1. CSS Specificity prioritize ruleset likes so(low to high):
+    All element:
+        *Container Element
+        Block-line Element
+        Inline Element
+    Class
+    Id
+    "*"
+    !important ← overrides all!
+    if a same type declaration is written more than one time the last style will be applied
+
+All the child element inside a container element gets the same style as the parent container if not overridden IN THE 'CASES OF DEFAULT INHERITED PROPERTIES
+✅ Common Inheritable Properties:
+    'font/text' related properties like color, font-family, font-size, letter-spacing, word-spacing, line-height, text-align, visibility, white-space
+
+    'table' related properties like border-collapse, border-spacing, caption-side, empty-cells
+
+❌ Common None Inhabitable Properties:
+    Layout & Box: margin, padding, width, height, border, display, position, float, clear
+
+    Visual-background: box-shadow, transform, opacity, z-index
+    
+    Flex/Grid: justify-content, align-items, gap, grid-template-columns
+
+    Animation-transition: animation, will-change
+
+
+2. 'div' is a container and block-line element 'without any semantic meaning' used just for adding CSS
+
+3. 'span' is a in-line element 'without any semantic meaning' used just for adding CSS
+
+4. any type of form element(input,button,select,textarea etc) wont inherit the font/text properties from parent so you should force inherit it
+
+*/
