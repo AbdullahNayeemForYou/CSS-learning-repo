@@ -73,4 +73,5 @@ All the child element inside a container element gets the same style as the pare
 
 4. any type of form element(input,button,select,textarea etc) wont inherit the font/text properties from parent so you should force inherit it
 
+
 */
