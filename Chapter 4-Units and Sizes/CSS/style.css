@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* browser's declaration is mine too! */
+    /* hence it is 16px-1rem!*/
+}
+
+body {
+    min-height: 100vh;
+}
+
+h1 {
+    border: 2px dashed green;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+main {
+    font-size: 2rem;
+    background-color: aqua;
+    width: 50vw;
+}
+
+p {
+    font-size: 2rem;
+    width: 50ch;
+}
+
+
+
+
+/* 
+Retrieval:
+
+1. Browsers use a *user agent stylesheet*, which sets default styles like font sizes, margins, and borders.
+   → If you redefine these in your CSS, your styles will override the browser defaults.
+
+2. 'px' is an absolute unit.
+   → It always represents a fixed number of pixels on the screen, regardless of screen size or context.
+
+3. '%' is a relative unit.
+   → It calculates its size based on its parent element's size. If the parent has no set size, percentage may resolve to 0 or default behavior (often 100% width in block elements). (See line 18)
+
+4. The difference between '%' and viewport units ('vw', 'vh') is:
+   → '%' is relative to the parent element. Percentage units depend on the dimensions of the parent element
+   → Viewport units ('vw', 'vh') are relative to the size of the *viewport* (i.e. the visible part of the browser window).
+
+5. 'rem' stands for *root em*.
+   → It multiplies the value based on the font-size of the root `<html>` element. (See line 28)
+
+   'em' is relative to the font-size of the current element or its nearest parent with a font-size defined.
+   → It cascades down the element tree. (See line 20)
+
+6. On line 31- the width property did not override the width in the line 26 because box/layout related properties don't get inherited by default unlike font/text related properties.
+*/
+
+ 
