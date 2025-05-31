@@ -51,6 +51,8 @@ Retrieval:
     !important ← overrides all!
     if a same type declaration is written more than one time the last style will be applied
 
+    However the form element 
+
 All the child element inside a container element gets the same style as the parent container if not overridden IN THE 'CASES OF DEFAULT INHERITED PROPERTIES
 ✅ Common Inheritable Properties:
     'font/text' related properties like color, font-family, font-size, letter-spacing, word-spacing, line-height, text-align, visibility, white-space
@@ -72,6 +74,4 @@ All the child element inside a container element gets the same style as the pare
 3. 'span' is a in-line element 'without any semantic meaning' used just for adding CSS
 
 4. any type of form element(input,button,select,textarea etc) wont inherit the font/text properties from parent so you should force inherit it
-
-
 */

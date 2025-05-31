@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 5px double red;
+/*     border-width: 5px 10px;
+    border-top-width: 20px; */
+    font-size: 1.5rem;
+    margin: 1.5em 2em;
+    padding-right: 15em;
+    padding: 1.5em;
+    outline: 5px solid purple;
+    outline-offset: -20px;
+}
+
+.circle {
+    background-color: lime;
+    width: 100px;
+    height: 100px;
+    border: 2px dotted yellow;
+    border-radius: 50px;
+    margin: 3rem auto;
+    outline: 2px solid red;
+    outline: -2px solid red;
+}
+
+
+
+/* 
+Retrieval:
+
+1. Padding is the space inside the border where margin is the space outside it.
+
+    If u say 'auto' after a base margin or padding size declaration it will automatically center them to the middle
+
+2. Padding and margin properties can be set by 4 side separately but typing padding-top/right/bottom/left same goes for margin BUT they also have shorthand so if you type only two properties after them it will set the top and the bottom with first and right and left with second-if you type all 4 it will go in order like so: top/right/bottom/left
+
+3. Border is the line containing the padding and content default border shorthand is:      
+    <size><style><color> (look line:8)
+
+    if you want to set the size for all 4 separately with only 2 line you should type border-width:top/bottom and right/left (look line:9)
+
+    'double' is two straight double lines
+    'solid' is one straight line
+    'dashed' is dashed line
+    'dotted' is dotted line
+    'outset' is bold line line
+
+4. Outline: outline is not part of the box-model because the deference between it and border is that it doesn't take up space
+    
+    outline's shorthand works just like border (<size><style><color>)
+    
+    one thing worth noticing about outline is that it has an offset property and you can add space on the outside by increasing the offset or you can decrease space to inside by decreasing the offset (look line: 16)
+*/

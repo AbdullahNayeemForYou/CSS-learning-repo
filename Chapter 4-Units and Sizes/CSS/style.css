@@ -31,13 +31,16 @@ p {
     width: 50ch;
 }
 
-
-
+div {
+    background-color: rgb(29, 0, 24);
+    width: 100%;
+    height: 100%;
+}
 
 /* 
 Retrieval:
 
-1. Browsers use a *user agent stylesheet*, which sets default styles like font sizes, margins, and borders.
+1. Browsers use a *user agent stylesheet*, which sets default styles like font sizes, padding, margins, and borders.
    → If you redefine these in your CSS, your styles will override the browser defaults.
 
 2. 'px' is an absolute unit.
@@ -58,5 +61,3 @@ Retrieval:
 
 6. On line 31- the width property did not override the width in the line 26 because box/layout related properties don't get inherited by default unlike font/text related properties.
 */
-
- 

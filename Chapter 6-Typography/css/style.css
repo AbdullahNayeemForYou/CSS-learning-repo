@@ -1,0 +1,60 @@
+body {
+    padding: 25%;
+    font-size: 1.3rem;
+    font-family: "Merriweather", serif;
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+p {
+    font-style: normal;
+  /*font-weight: 900; */
+  /*text-align: justify;*/
+    text-transform: capitalize;
+/*     text-decoration: line-through; */
+     
+}
+
+
+
+
+
+/* 
+Retrieval:
+
+?🏫Typography is the art and technique of arranging type on a page. The font family, style, size, and weight (or thickness) all play a role in typography on the Web, as does the spacing between lines and letters. All of this can be controlled using CSS.
+
+👨‍🎓learned:
+* 📃font-properties:
+    🤸‍♂️font weight: (300-900) hence thinner to thicker font boldness. (see at line 13)
+
+    📝font-families that has a space in their name is written inside " '' ".
+
+    🎁we can add backup fonts for user with commas. (see at line 4)
+
+    😎we can make a font available to all user by importing it directly using goggle font api 
+        !🙅‍♂️!more font can be make the loading duration longer  
+
+* 📰text-properties:
+    📐text-align for aligning the text on a side
+        'justify' for newspaper line formate (see at line 14)
+
+        default alignment is center
+
+    ⛹️‍♂️📃text-transformation:
+        it contains properties like capitalized, uppercase lowercase etc
+
+    🔨📃text-decoration:
+        it contains properties like underline, overline, line-through (See at line 16)
+
+    👩‍🎓other properties that you learned and no need to explain are:
+        word-spacing
+        letter-spacing
+
+    ?😷 A recommendation:
+        for sizing properties and stuff inside a text element use 'em' since it is related to font size
+*/
+
+

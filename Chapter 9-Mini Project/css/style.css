@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+:root {
+    --hover-bg: rgba(255, 58, 58, 0.952);
+    --hover-text:rgba(255, 200, 200, 1);
+
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-border {
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 25px;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    background-color: rgb(255, 208, 0);
+    border-radius: 25px 25px 0px 0;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 2rem;
+    font-family: 'Cascadia Code', monospace;
+}
+
+a {
+        text-decoration: none;
+}
+
+li a:hover {
+    color: var(--hover-text);
+    background-color: var(--hover-bg);
+}
+
+
+li a{
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+li:last-child a{
+    border-radius: 0px 0px 25px 25px;
+}
+
+li {
+    border-top: 1px solid #333;
+}
+
+p {
+    margin-top: 15px;
+}
+
+
+/* 
+🔮A pseudo class used for:
+    👉states like hover
+    👉targeting a specific element like li:last-child or li:nth-child(child number)
+    👉form element styling like what happens when user add a valid or invalid input
+
+🔮A pseudo element used for:
+    👉A CSS pseudo-element is used to style specific parts of an element. For example, it can be used to: Style the first letter or line, of an element
+
+👉Line 24: If you’re designing a UI where the contents are  inside a rounded box (like a border-radius) don’t assume child elements will match visually—you often need to style them individually. Especially for elements like headings, always check and add border-radius directly if needed.
+
+👉Line 51: When using pseudo-selectors like :last-child, remember:
+        👉It selects elements within their parent, not across the whole page.
+
+        👉If you're styling something inside the selected element (like an <a> inside <li>), you need to include it in your selector explicitly (e.g., li:last-child a).
+*/

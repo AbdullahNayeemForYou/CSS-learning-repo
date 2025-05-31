@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  padding: 5% 10%;
+  font-family: "Roboto", sans-serif;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ul {
+  list-style: decimal;
+  line-height: 1.5;
+  color: red;
+  list-style-image: url('../images/checkmark.png');
+}
+
+ul ::marker{
+  color: blue;
+  font-family: cursive;
+/*   content: '>>   '; */
+}
+
+
+/* 
+👉List-style default shorthand is = type + image + position
+👉A list has a default padding of 40px on left
+📸in css use url('image location') to add images
+
+👉You can style the bullet of a list with li::marker
+      👉You can add image in content to use as bullet
+
+👉 Inside HTML list element You can use an attribute 'start' to specify the starting number/character of a list
+      👉You can also add reversed to reverse the order
+
+*/
+

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+/*     text-decoration: line-through; */
+    cursor: pointer;
+/*     cursor: not-allowed; */
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover, :focus {
+    color: lightblue;
+}
+
+a:active {
+    color: red;
+}
+
+
+
+
+/* 
+*Retrieval:
+
+1️⃣: every anchor link contains a underlined-decoration of text, a color of blue of not-visited links and purple of visited links by default
+
+2️⃣: pseudo class is a state representor of its parent for example 'visited' class defines the visited state of a link(18), 'hover' class defines the hovering state(22) and the 'focus' class defines the screen reader's hovering on a link
+
+        pseudo class is more specific then its parent (🤷‍♂️duh?)
+
+        but every pseudo class is in the same level of specify like they are siblings😲, so consider their writing order🙅‍♀️
+
+3️⃣:learned pseudo-specific properties👩‍🎓:
+
+    visited
+    focus
+    hover
+    active
+
+    learned link-specific properties👩‍🎓:
+    cursor
+*/
