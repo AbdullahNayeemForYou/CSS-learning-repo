@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+
+body {
+    background-color: #f2f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    color: #333333;
+}
+
+header {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding: 1rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 0.35rem 1rem;
+    border-radius: 10px;
+
+}
+header a:hover {
+    background-color: #797878;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem;
+    background-color: #555555;
+}
+
+header nav {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header figure {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center;
+    padding: 1.5rem;
+}
+
+header img {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+header figcaption {
+    padding-top: 0.8rem;
+}
+
+main {
+    flex-grow: 1;
+    padding: 1rem 1rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin: 1.5rem;
+    width: 60%;
+    margin: 1.5rem auto;
+}
+
+main h2 {
+    color: #E44D26;
+    padding: 1rem;
+}
+
+.about-lts {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.about-lts p {
+    padding: 1rem;
+}
+
+.taco-trivia {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #f4f4f4;
+    padding-inline: 0.5rem;
+    border-left: 5px solid #E44D26;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 1rem;
+}
+
+.taco-trivia details {
+    display: flex;
+    flex-flow: column;
+}
+
+.taco-trivia summary{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.taco-trivia p {
+    padding-inline: 0.5rem;
+    border-left: 2px solid #DDDDDD;
+    margin-top: 1rem;
+}
+
+.our-menu {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center;
+    text-align: center;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.our-menu table {
+    border-collapse:collapse;
+    width: 100%;
+}
+
+.our-menu th, td {
+    padding: 1rem 4rem;
+    border: 1px solid #333333;
+}
+
+.our-menu caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 0.8rem;
+}
+
+.our-menu thead, tfoot {
+    background-color: #E44D26;
+    color: white;
+}
+
+footer {
+    background-color: #333333;
+    padding: 1.5rem;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid #E44D26;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 213, 0);
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    .our-menu th, td {
+        padding: 1rem;
+    }
+}

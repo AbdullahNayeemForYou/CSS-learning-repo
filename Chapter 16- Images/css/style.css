@@ -1,0 +1,19 @@
+* {padding: 0;margin: 0;box-sizing: border-box;}
+
+img{display: block;}
+
+.hero {
+  border: 1px solid black;
+  background-color: rgba(0,0,0,0.2);
+
+  background-image: url(../img/scenic-2200x1331.png);
+  background-size: cover;
+  background-clip: text;
+}
+
+.hero img{
+  border: 5px double #333;
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+}

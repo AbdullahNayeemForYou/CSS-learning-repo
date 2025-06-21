@@ -1,7 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+* {padding: 0;margin: 0;box-sizing: border-box;}
+
 body {
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
 }
 
+ul {
+  text-align: center;
+  background-color: black;
+}
+
+li {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: darkgray;
+  padding-inline: 10px;
+}
+
+li a:hover, li a:focus {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+.shadow-inset-center {
+	-webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* 
+Chapter - Display
+Lets go ahead and style that 'opposite' class that was applied to that <span> element
+
+Just to make it stand out we will start with a deferent 'background color' and i will make this a flat black(#333) and we will use a 'color' that is not quite full white "whitesmoke".
+
+And now you can see we have styled this element and it is just surrounding the word 'another' so our span element has a class of 'opposite' and we have change the color for the background and the text.
+
+But lets see what we can and cant do in inline element and so now lets go ahead and try to put a margin on the top of 100px and you can see nothing changed. 👉We cant apply a top or bottom margin on a inline element. 
+
+Likewise, we will try a deferent one, lets go w ith height of 200px, it does not change once again 👉height and width cannot be applied to inline element.
+
+And padding applies just a little differently so lets look at that and lets go with  1-rem, and looks like everything  is as expected here where we have a 1-rem padding top-bottom-left and right HOWEVER, if we go ahead and increase that lets say 4-rem, look what happens, it overlaps the above paragraph and we probably would not want that
+
+Now lets apply a display property and we have talked about this being already as a default 'inline'. And then of course paragraphs default to 'block' and many other element as well like tha 'main' element we have talked about. HOWEVER, there is an option and that is 'inline-block', and now our padding is applied but it is not overlapping the other paragraphs so it is now respecting the top and bottom
+
+Likewise, if we come back and apply that margin it could be margin-top or bottom and we will just put 100px for the top now the margin worked as well because now we are seeing some extra space here and again this is applying just to that span element not to the full paragraph itself and now we can even apply the height we applied earlier that did not work and we say 200px and now our span element just got a lot taller
+
+So the 'inline-block' property value is kind of hybrid here because we stayed inline in our paragraph this didn't create a new line like 'block' would and at the same time it now allows some property to be applied that normally would not applied to inline display.
+
+So to quickly recap:
+  block level element stacks on top of each other always create a new line 
+  Inline element do not stacks on top of each other and do not create a new line
+
+  Block level element automatically has a 100% of width of whatever they are given.IF THEY ARE NOT INSIDE SOMETHING THAT ARE LIMITING THEIR WIDTH
+  THEY WILL BE THE FULL WIDTH OF THE PAGE
+
+  Inline level element only take up the width of their content of course of course unless we put extra padding on them and then it has little bit width in there because of the padding
+
+  And then when we switch to 'inline-block', We get kind of a hybrid here where we can keep the content inline but we can go ahead and apply a top and bottom margin and height and or any other layout sizing element  that only block level element have
+
+
+  👉inline element cant have margin top and bottom, height
+  👉we can change a inline or block element display type to each other or we can use inline-block which allows:
+    👉using property that is only available in block element like margin top and bottom, height
+    👉also being at the same line
+
+  👉an inline element does not have text-align property so changing a block level element to inline using 'Display' will give u the same result that you cant align the text
+
+*/

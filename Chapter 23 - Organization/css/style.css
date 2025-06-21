@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* COLORS */
+  --HEADER-BGCOLOR: #333;
+  --HEADER-COLOR: whitesmoke;
+}
+
+/* || UTILITY CLASSES */
+
+.underline {
+  text-decoration: underline;
+}
+
+/* || GENERAL STYLES */
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.5rem;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+/* || BLOCKS */
+/* aka components */
+
+.btn {
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.header {
+  background-color: var(--HEADER-BGCOLOR);
+  color: var(--HEADER-COLOR);
+  padding: 1rem 1rem 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+/* MODIFIERS */
+.btn--secondary {
+  background-color: yellow;
+}
+
+.btn--lean {
+  transform: skew();
+}
+
+.btn--border-lg {
+  border: 15px solid hotpink;
+}

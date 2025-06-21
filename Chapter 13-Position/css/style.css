@@ -1,0 +1,57 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+body {
+  font-size: 1.5rem;
+  height: 2000px;
+}
+
+.contract-btn {
+  position: fixed;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  width: 400px;
+  height: 100px auto;
+  border-radius: 8px;
+  margin: 200px auto;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #333;
+  padding: 1rem;
+}
+
+.navbar a{
+  color: white;
+}
+
+        

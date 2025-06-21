@@ -1,0 +1,35 @@
+
+* {padding: 0;margin: 0;box-sizing: border-box;}
+
+h1 {
+    text-align: center;
+}
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-nav a {
+    color: white;
+    padding: 80px;
+    font-size: 1.5rem;
+} 
+
+
+.second-nav {
+    position: sticky;
+    top: 0;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
+
+.second-nav a {
+    color: brown;
+    padding: 80px;
+    font-size: 1.5rem;
+}
